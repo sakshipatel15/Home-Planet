@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <link rel="icon"
+        href="https://th.bing.com/th/id/R.20be2fb85597a3553a6b5ffd6cec97a6?rik=8nsUiUnb0bic8w&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f9%2f93%2fWordpress_Blue_logo.png&ehk=JBi%2fdcXw0wDeOV%2f9nrZFivUA6U%2bNpD%2bRD7MYZMJ%2b77I%3d&risl=&pid=ImgRaw&r=0"
+        type="images/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Service-Planet Earth</title>
+</head>
+
+<body>
+    <section class="main-section ">
+        <div class="main-section-header flex">
+            <img src="https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/08/Logo.png" alt=""
+                class="header-logo">
+
+            <div class="header-links" id="navlinks">
+                <ul class="flex">
+                    <li><a href="index.html" class="main-header-link" id="home-link">HOME</a></li>
+                    <li><a href="about.html" class="main-header-link">ABOUT</a></li>
+                    <li><a href="service.html" class="main-header-link">SERVICES</a></li>
+                    <li><a href="contact.html" class="main-header-link">CONTACT</a></li>
+                </ul>
+            </div>
+            <a href="#" id="togglebutton" class="hover-links toggle-btn flex"><i class='bx bx-menu'></i></a>
+        </div>
+        <div class="main-section-desc flex">
+            <h1>SERVICES</h1>
+        </div>
+    </section>
+
+
+    <section class="about-website container flex">
+        <div class="about container flex">
+            <div class="about-content container flex " id="diffrent-content">
+                <div class="about-desc">
+                    <h3>Web Design</h3>
+                    <p class="about-p">I made it so it is super easy to update and so that it flows perfectly with my
+                        tutorials.
+                        Lots of love and hundreds of hours went into making it. I hope you love it as much as I do. I
+                        wish
+                        you
+                        the best of luck with your business, enjoy the adventure.</p>
+                    <a href="#" class="btn primary-btn">EXPLORE</a>
+                </div>
+                <img src="https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/10/Web-Design.jpg" alt=""
+                    class="about-img">
+            </div>
+            <div class=" about-content container flex content1" id="second-content">
+                <img src="https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/10/Graphic-Design.jpg"
+                    alt="" class="about-img">
+                <div class="about-desc">
+                    <h3>Graphic Design</h3>
+                    <p class="about-p">We specialize in logos, merchandise and more. Anyone can create nice graphics but
+                        it's much better to create memorable ones. Contact us by calling, emailing or filling out our
+                        form. You will receive a free quote by email within 24 hours.</p>
+                    <a href="#" class="btn primary-btn">EXPLORE</a>
+                </div>
+            </div>
+            <div class=" about-content container flex content1" id="diffrent-content">
+                <div class="about-desc">
+                    <h3>Content Writing</h3>
+                    <p class="about-p">Want to attract people to your website? You have to have the best content in the
+                        world. Our content writers will create award willing content for you. Contact us by calling,
+                        emailing or filling out our form. You will receive a free quote by email within 24 hours.</p>
+                    <a href="#" class="btn primary-btn">EXPLORE</a>
+                </div>
+                <img src="	https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/10/Content-Writing.jpg"
+                    alt="" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section flex">
+        <div class="container content flex">
+            <h2>TALK TO US</h2>
+            <p>Have any questions? We are always open to talk about your business, new projects,
+                creative opportunities and how we can help you.</p>
+            <a href="#" class="content-btn primary-btn">GET IN TOUCH</a>
+        </div>
+    </section>
+
+    <footer class="webfooter-section flex">
+        <div class="container">
+            <p>©2022 Earth. All right reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const togglebtn = document.getElementById('togglebutton');
+        const navlinks = document.getElementById('navlinks');
+
+
+        togglebtn.addEventListener("click", () => {
+            navlinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

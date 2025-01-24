@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="media.css">
+    <link
+      rel="icon"
+      href="https://th.bing.com/th/id/R.20be2fb85597a3553a6b5ffd6cec97a6?rik=8nsUiUnb0bic8w&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f9%2f93%2fWordpress_Blue_logo.png&ehk=JBi%2fdcXw0wDeOV%2f9nrZFivUA6U%2bNpD%2bRD7MYZMJ%2b77I%3d&risl=&pid=ImgRaw&r=0"
+      type="images/x-icon"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact-Planet Earth</title>
+</head>
+
+<body>
+    <section class="main-section ">
+
+        <div class="main-section-header flex">
+            <img src="https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/08/Logo.png" alt=""
+                class="header-logo">
+
+            <div class="header-links" id="navlinks">
+                <ul class="flex">
+                    <li><a href="index.html" class="main-header-link" id="home-link">HOME</a></li>
+                    <li><a href="about.html" class="main-header-link">ABOUT</a></li>
+                    <li><a href="service.html" class="main-header-link">SERVICES</a></li>
+                    <li><a href="contact.html" class="main-header-link">CONTACT</a></li>
+                </ul>
+            </div>
+            <a href="#" id="togglebutton" class="hover-links toggle-btn flex"><i class='bx bx-menu'></i></a>
+        </div>
+        <div class="main-section-desc flex">
+            <h1>CONTACT</h1>
+        </div>
+    </section>
+
+
+
+    <section class="website-contact container flex">
+        <div class="contact-left-content ">
+            <h2>Get In Touch</h2>
+            <div class="contact-form ">
+                <input class="form-inputs" type="text" placeholder="Your Name"><br>
+                <input class="form-inputs" type="Number" placeholder="Phone Number"><br>
+                <input class="form-inputs" type="email" placeholder="Email"><br>
+                <input class="form-inputs" id="bigtext" type="text" placeholder="Message" row="40"><br>
+                <div class="button flex">
+                    <a href="#" class="btn primary-btn">SEND NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right-content ">
+            <h2>Talk To Us</h2>
+            <div class="items">
+                <div class="talk-content flex">
+                    <div class="contact-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="para">
+                        <p>EMAIL</p>
+                        <h4>something@tyler.com</h4>
+                    </div>
+                </div>
+                <div class="talk-content flex">
+                    <div class="contact-icon">
+                        <i class='bx bx-phone-call'></i>
+                    </div>
+                    <div class="para">
+                        <p>PHONE NUMBER</p>
+                        <h4>202-555-0188</h4>
+                    </div>
+                </div>
+                <div class="talk-content flex">
+                    <div class="contact-icon">
+                        <i class='bx bx-location-plus'></i>
+                    </div>
+                    <div class="para">
+                        <p>ADDRESS</p>
+                        <h4>2727 Ocean Road,
+                            Malibu, CA, 90264</h4>
+                    </div>
+                </div>
+                <div class="app-links flex">
+
+                    <p>Follow Us:</p>
+                    <div class="list">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-linkedin'></i>
+                        <i class='bx bx-play'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <footer class="webfooter-section flex">
+        <div class="container">
+        <p>©2022 Earth. All right reserved.</p>
+    </div>
+    </footer>
+
+
+
+
+    <script>
+        const togglebtn = document.getElementById('togglebutton');
+        const navlinks = document.getElementById('navlinks');
+    
+    
+        togglebtn.addEventListener("click",()=>{
+            navlinks.classList.toggle('active');
+        })
+    </script>
+
+
+
+    
+</body>
+
+</html>

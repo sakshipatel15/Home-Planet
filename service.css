@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color: #74A84A;
+    --secondary-text-color: #000000;
+    --accent-color: #2c541d;
+    --accent-color-dark: #585858;
+    --padding-inline-section: 20px;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    height: auto;
+}
+p{
+    font-size: 1.25rem;
+     
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+h1{
+    font-size: 3rem;
+    font-family:'Jost' ,sans-serif;  
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.25rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+    gap: 20px;
+}
+.primary-btn{
+    color: #FFFFFF;
+    background-color:var(--primary-text-color) ;
+    padding: 15px 29px;
+    text-align: center;
+}
+.primary-btn:hover{
+    background-color: var(--accent-color);
+}
+.main-section{
+    padding-top: 45px;
+    background: url(https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/10/Call-to-action.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 569px;
+}
+.main-section-header{
+   justify-content: space-between;
+   margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+    gap: 20px;
+    position: relative;
+}
+.main-section-header img{
+    width: 18vh;
+    margin-inline: 20px;
+}
+.header-links ul{
+    justify-content: end;
+    gap: 50px;
+}
+#home-link{
+    color: #74A84A;
+}
+.toggle-btn{
+    display: none;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color:var(--primary-text-color) ;
+    padding: 5px 15px;
+    /* text-align: center; */
+}
+.main-header-link{
+    color: #000000;
+}
+.main-header-link:hover{
+    color: var(--primary-text-color);
+}
+.main-section-desc{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-block: 130px;
+    gap: 30px;
+    width: 100%;
+    
+    h1{
+        letter-spacing:10px;
+        font-size: 80px;
+        font-weight: 500;
+        color: var(--accent-color);
+    }
+}
+
+/* about-website */
+
+
+.about-website{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: row;
+}
+.about{
+    flex-direction: column;
+    gap: 100px;
+}
+.about-desc{
+    width: 50%;
+    height: 300px;
+    font-family: 'jost',sans-serif;
+    display: flex;
+    flex-direction: column;
+     h3{
+        color: var(--secondary-text-color);
+        font-size: 28px;
+        text-align: left;
+        padding-block: 10px;
+    }
+}
+.about-p{
+    font-size: 17px;
+    margin-top: 30px;
+    color: var(--accent-color-dark);
+
+}
+.about-desc .btn{
+    width: 40%;
+    margin-top: 30px;
+}
+.about-website img{
+   width: 50%;
+}
+/* #second-content{
+    gap: 100px;
+} */
+/* #diffrent-content{
+    gap: 30px;
+} */
+.content-section{
+    background: url(https://websitedemos.net/earth-02/wp-content/uploads/sites/1125/2022/10/Call-to-action.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 535px;
+}
+.content{
+    flex-direction: column;
+    text-align: center;
+    padding-block: var(--padding-inline-section);
+    width: 50%;
+    h2{
+        letter-spacing:4.92px;
+        font-size: 41px;
+        font-weight: 500;
+        color: var(--accent-color);
+    }
+    p{
+        font-size: 17px;
+        text-align: center;
+        color: var(--accent-color-dark);
+    }
+    .content-btn{
+        letter-spacing: 3px;
+        font-size: 16px;
+    }
+}
+
+/* footer */
+
+.webfooter-section{
+    padding-block: 40px;
+    text-align: center;
+    justify-content: center;
+    color: var(--secondary-text-color);
+    background-color: #FAFAFA;
+}
+
+
+
+/* reponsive */
+
+
+@media screen and (max-width:1030px) {
+    .main-section-header{
+        overflow: initial;
+    }
+    .header-links{
+        position: absolute;
+        background: transparent;
+        background-color:#fff;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        justify-content: center;
+        padding-block: 20px;
+    }
+    .header-links.active{
+        left: 0;
+    }
+    .header-links ul{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .toggle-btn{
+        display: block;
+        margin-right: 20px;
+    }
+    .main-section-desc{
+      h1{
+          font-size: 60px;
+      }
+    }  
+    .content{
+      width: 50%;
+      padding-block: 2px;
+      h2{
+          letter-spacing:4px;
+          font-size: 30px;
+          font-weight: lighter;
+          flex-wrap: nowrap;
+      }
+      p{
+          font-size: 14px;
+          text-align: center;
+      }
+      .content-btn{
+          letter-spacing: 3px;
+          font-size: 16px;
+      }
+  }
+  .content-section{
+      height: 400px;
+  }
+  }
+  
+  @media screen and (max-width:925px) {
+      .main-section{
+          padding-top: 20px;
+      }
+      .toggle-btn{
+          display: block;
+      }
+      .content-section{
+          height: 350px;
+      }
+      
+  }
+  @media screen and (max-width:770px) {
+      .content{
+          width: 50%;
+          padding-block: 2px;
+          h2{
+              letter-spacing:4px;
+              font-size: 21px;
+              font-weight: lighter;
+              flex-wrap: nowrap;
+          }
+          p{
+              font-size: 10px;
+              text-align: center;
+          }
+          .content-btn{
+              /* letter-spacing: 3px; */
+              font-size: 10px;
+          }
+      }
+      .content-section{
+          height: 300px;
+      }
+  
+  }
+  @media screen and (max-width:769px) {
+   .about-content{
+      flex-direction: column;
+    
+   }
+   .content1{
+    margin-top: -350px;
+   }
+   .about-content img{
+      width: 100%;
+   }
+   #diffrent-content{
+      flex-direction: column-reverse;
+   }
+   .about-desc{
+      width: 100%;
+      height: 600px;
+   }
+   .about-desc .btn{
+      width: 50%;
+      margin-top: 30px;
+  }
+  .about{
+      gap: -1px;
+  }
+  .content-section{
+    margin-top: -350px;
+  }
+  }
